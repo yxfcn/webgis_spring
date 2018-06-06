@@ -1,0 +1,25 @@
+html,body,main,div,header,footer,aside,#container{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+aside,footer,header,main{
+    display:block;
+}
+header,footer{
+    height:10%;
+}
+main{
+    height:80%;
+}
+#container {
+    width: 100%;
+    height: 100%;
+   /* min-width: ;
+    min-height: ;
+    max-width: ;
+    max-height: ;*/
+}

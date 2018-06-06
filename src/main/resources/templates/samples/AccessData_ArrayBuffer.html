@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>利用ArrayBuffer访问数据</title>
+    <style>
+        #main {
+            font-family: "Arial Unicode MS, Arial, sans-serif";
+            font-size: 24px;
+        }
+        #info {
+            font-size: 16px;
+        }
+        #content {
+            width: 600px;
+            height: 275px;
+            padding: 5px;
+            overflow: auto;
+            border: solid 2px #AAAAAA;
+            background-color: #FFFFFF;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            -moz-box-shadow: 0 0 0.5em black;
+            -webkit-box-shadow: 0 0 0.5em black;
+            -o-box-shadow: 0 0 0.5em black;
+            box-shadow: 0 0 0.5em black;
+        }
+        .failure {
+            color: red;
+        }
+        #status {
+            font-size: 12px;
+        }
+    </style>
+    <script src="../../static/config/config_AccessData_AB.js"></script>
+</head>
+<body>
+<div id="main">Get <b>ArrayBuffer</b> content using esriRequest.</div>
+<div id="info">
+    <p>This sample demonstrates how to get ArrayBuffer content from an Image or Json resource.</p>
+</div>
+<p>
+    Blob content :
+    <span id="blob_content">
+       <input type="radio" name="radioGrp" id="rdoImage" checked/>
+    Blob from Image
+       <input type="radio" name="radioGrp" id="rdoJson"/>
+    Blob from Json resource
+    </span>
+    <br />
+    <br />
+    <input type="text" id="url" size="100" value="https://sampleserver6.arcgisonline.com/arcgis/rest/services/WorldTimeZones/MapServer/tile/1/0/0" />
+    <input id="submitRequest" type="button" value="GO" />
+    <span id="status"></span>
+</p>
+<h2>Content</h2>
+<div id="content"></div>
+<script src="http://localhost:8080/arcgis_js_api/3.24/init.js"></script>
+</body>
+</html>
